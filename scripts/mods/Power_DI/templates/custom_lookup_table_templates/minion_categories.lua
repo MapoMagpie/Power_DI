@@ -200,7 +200,15 @@ local minion_categories = {
 	},
 	renegade_flamer = {
 		attack_type = "loc_contract_task_weapon_type_ranged",
-		faction = "mloc_chaos_faction",
+		faction = "loc_contract_task_enemy_type_traitor",
+		type = "mloc_specialist",
+		class = "mloc_flamer",
+		display_name = "loc_breed_display_name_renegade_flamer",
+		armor_type = "loc_weapon_stats_display_berzerker",
+	},
+	renegade_flamer_mutator = {
+		attack_type = "loc_contract_task_weapon_type_ranged",
+		faction = "loc_contract_task_enemy_type_traitor",
 		type = "mloc_specialist",
 		class = "mloc_flamer",
 		display_name = "loc_breed_display_name_renegade_flamer",
@@ -216,7 +224,7 @@ local minion_categories = {
 	},
 	cultist_mutant = {
 		attack_type = "loc_contract_task_weapon_type_melee",
-		faction = "mloc_chaos_faction",
+		faction = "loc_contract_task_enemy_type_cultist",
 		type = "mloc_specialist",
 		class = "loc_breed_display_name_cultist_mutant",
 		display_name = "loc_breed_display_name_cultist_mutant",
@@ -288,7 +296,7 @@ local minion_categories = {
 	},
 	cultist_grenadier = {
 		attack_type = "loc_contract_task_weapon_type_ranged",
-		faction = "mloc_chaos_faction",
+		faction = "loc_contract_task_enemy_type_cultist",
 		type = "mloc_specialist",
 		class = "Bomber",
 		display_name = "loc_breed_display_name_cultist_grenadier",
@@ -308,7 +316,7 @@ local minion_categories = {
     -- scripts/settings/breed/breeds/cultist/cultist_captain_breed.lua
     cultist_captain = {
 		attack_type = "loc_contract_task_weapon_type_ranged", -- they use both; the other captain has this. monkey see, monkey do :)
-		faction = "mloc_chaos_faction",
+		faction = "loc_contract_task_enemy_type_cultist",
 		type = "mloc_monstrosity",
 		class = "loc_breed_display_name_cultist_captain",
 		display_name = "loc_breed_display_name_cultist_captain",
@@ -334,7 +342,7 @@ local minion_categories = {
     -- scripts/settings/breed/breeds/cultist/cultist_mutant_mutator_breed.lua
     cultist_mutant_mutator = {
 		attack_type = "loc_contract_task_weapon_type_melee",
-		faction = "mloc_chaos_faction",
+		faction = "loc_contract_task_enemy_type_cultist",
 		type = "mloc_specialist",
 		class = "loc_breed_display_name_cultist_mutant",
 		display_name = "loc_breed_display_name_cultist_mutant", -- name is identical to the regular mutant
@@ -369,7 +377,7 @@ local minion_categories = {
 		display_name = "loc_breed_display_name_renegade_plasma_gunner",
 		armor_type = "loc_weapon_stats_display_armored",
 	},
-		chaos_armored_hound = {
+	chaos_armored_hound = {
 		attack_type = "loc_contract_task_weapon_type_melee",
 		faction = "mloc_chaos_faction",
 		type = "mloc_specialist",
@@ -408,6 +416,41 @@ local minion_categories = {
 		class = "loc_breed_display_name_attack_valkyrie",
 		display_name = "loc_breed_display_name_attack_valkyrie",
 		armor_type = "loc_weapon_stats_display_super_armor",
+	},
+    -- Havoc Heinous Rituals ritualist
+	chaos_mutator_ritualist = {
+		attack_type = "loc_contract_task_weapon_type_melee",
+		faction = "mloc_chaos_faction",
+		type = "mloc_horde",
+		class = "mloc_basic",
+		display_name = "loc_breed_display_name_cultist_ritualist",
+		armor_type = "loc_weapon_stats_display_unarmored",
+	},
+	-- Havoc Heinous Rituals daemonhost
+	chaos_mutator_daemonhost = {
+		attack_type = "loc_contract_task_weapon_type_melee",
+		faction = "mloc_chaos_faction",
+		type = "mloc_monstrosity",
+		class = "loc_breed_display_name_chaos_daemonhost",
+		display_name = "loc_breed_display_name_chaos_daemonhost",
+		armor_type = "loc_glossary_armour_type_resistant",
+	},
+	-- Shield enemies introduced in 1.12.0
+	cultist_vanguard = {
+		attack_type = "loc_contract_task_weapon_type_melee",
+		faction = "loc_contract_task_enemy_type_cultist",
+		type = "mloc_horde",
+		class = "loc_breed_display_name_cultist_vanguard",
+		display_name = "loc_breed_display_name_cultist_vanguard",
+		armor_type = "loc_weapon_stats_display_unarmored",
+	},
+	renegade_vanguard = {
+		attack_type = "loc_contract_task_weapon_type_melee",
+		faction = "loc_contract_task_enemy_type_traitor",
+		type = "mloc_horde",
+		class = "loc_breed_display_name_renegade_vanguard",
+		display_name = "loc_breed_display_name_renegade_vanguard",
+		armor_type = "loc_weapon_stats_display_armored",
 	},
 }
  return minion_categories
